@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    /* background: linear-gradient(to bottom, #d4e157, #a5d6a7); */
+}
+
+/* body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url("Images/ayurveda.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    filter: blur(25px);
+    z-index: -1;
+} */
+
+nav {
+    display: flex;
+    min-width: 344px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e6f40;
+    height: 4rem;
+    padding: 0 15px;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover i {
+    transform: rotate(90deg);
+}
+
+.stories {
+    margin: 10px 8%;
+    height: 500px;
+}
+
+.stories h1 {
+    font-size: 25px;
+}
+
+main {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.zoomwrap {
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+}
+
+.zoomwrap img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.container:hover .d1 {
+    transform: scale(1.2);
+}
+
+.container:hover h1 {
+    color: #2e6f40;
+}
+
+.background {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 80%;
+    margin: 2% auto;
+    padding: 15px 15px;
+    border-radius: 8px;
+}
+
+.content {
+    margin: auto;
+    padding: 0 12px;
+    border: 2px solid black;
+}
+
+.content h1 {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    padding: 10px 0;
+    color: white;
+    background-color: #001f3f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 604px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+}
