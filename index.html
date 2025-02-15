@@ -11,7 +11,8 @@
 
 <body>
     <nav>
-        <div class="logo">AyurCare</div>
+        <div class="positioning"></div>
+        <div class="logo">AyurCare</div>    
         <ul>
             <li class="dropdown">
                 <a href="#" class="refer">Herbs <i class="fas fa-arrow-down"></i></a>
@@ -45,19 +46,41 @@
             </li>
             <li><a href="" class="refer">Ayurvedic Hospitals <i class="fas fa-arrow-down"></i></a></li>
         </ul>
-        <div class="empty"></div>
     </nav>
     <main>
         <div class="stories">
-            <h1>TODAY'S TOP STORIES</h1>
+            <h3>TODAY'S TOP STORIES</h3>    
             <hr>
-            <div class="container">
+            <div class="container1">
                 <div class="zoomwrap">
-                    <img src="Images/Ayurveda-Utensils.jpeg" alt="ayurveda-utensils" class="d1">
+                    <img src="Images/Ayurveda-Utensils.jpeg" alt="ayurveda-utensils" class="img1">
                 </div>
-                <h1>Cancer Symptoms That Are Easy to Overlook</h1>
+                <div class="module-text">
+                <h3>Cancer Symptoms That Are Easy to Overlook</h3>
+                <p>Not all cancer symptoms are obvious, but recognizing early signs can make a difference. Discover the warning signs that could signal the need for medical attention.</p>
+                </div>
             </div>
             <hr>
+            <div class="container2">
+                <div class="story">
+                    <div class="zoomwrap">
+                        <img src="Images/story1.jpg" alt="story-1" class="img1">
+                    </div>
+                    <h2>Natural Remedies for Common Ailments</h2>
+                </div>
+                <div class="story">
+                    <div class="zoomwrap">
+                        <img src="Images/story2.jpg" alt="story-2" class="img1">
+                    </div>
+                    <h2>Understanding Your Dosha Type</h2>
+                </div>
+                <div class="story">
+                    <div class="zoomwrap">
+                        <img src="Images/story3.jpg" alt="story-3" class="img1">
+                    </div>
+                    <h2>Seasonal Ayurvedic Diet Tips</h2>
+                </div>
+            </div>
         </div>
         <div class="background">
             <div class="content">
@@ -156,37 +179,6 @@
             <p></p>
         </div>
     </footer>
-    <script>
-        document.querySelectorAll('.dropdown').forEach(dropdown => {
-            const menu = dropdown.querySelector('.dropdown-menu');
-            
-            dropdown.addEventListener('mouseenter', () => {
-                menu.style.display = 'grid';
-                menu.style.opacity = '1';
-                menu.style.transform = 'translateY(0)';
-            });
-
-            menu.addEventListener('mouseenter', () => {
-                menu.style.display = 'grid';
-                menu.style.opacity = '1';
-                menu.style.transform = 'translateY(0)';
-            });
-
-            dropdown.addEventListener('mouseleave', (e) => {
-                if (!e.relatedTarget || !e.relatedTarget.closest('.dropdown-menu')) {
-                    menu.style.display = 'none';
-                    menu.style.opacity = '0';
-                    menu.style.transform = 'translateY(-10px)';
-                }
-            });
-
-            menu.addEventListener('mouseleave', () => {
-                menu.style.display = 'none';
-                menu.style.opacity = '0';
-                menu.style.transform = 'translateY(-10px)';
-            });
-        });
-    </script>
 </body>
 
 </html>
