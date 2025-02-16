@@ -59,12 +59,12 @@ nav ul li a {
     align-items: center;
 }
 
-nav ul li i {
+nav ul li svg {
     margin-left: 5px;
     transition: transform 0.3s ease;
 }
 
-nav ul li:hover i {
+nav ul li:hover svg {
     transform: rotate(90deg);
 }
 
@@ -81,7 +81,7 @@ nav ul li:hover i {
     background-color: white;
     padding: 15px 30px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 50%;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -90,6 +90,7 @@ nav ul li:hover i {
     z-index: 99;
     transition: all 0.3s ease;
     transform: translateX(-20px);
+    flex-wrap: nowrap;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -117,8 +118,9 @@ nav ul li:hover i {
 }
 
 .stories {
-    margin: 35px auto;
-    padding: 30px;
+    margin: 25px auto;
+    padding: 35px;
+    padding-top: 15px;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
